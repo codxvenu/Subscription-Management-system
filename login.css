@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --cream: #f6f7f8;
+    --grey: #717384;
+    --black: #323339;
+    --yellow: #dbdde2;
+}
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 200,
+        'opsz' 24
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    text-transform: capitalize;
+    color: var(--yellow);
+    background: #000;
+}
+ small{
+    color: var(--yellow);
+ }
+.container{
+    height: 100%;
+    width: 100%;
+     background: url("bg.png");
+    background-position: 500px 150px;
+    background-size: cover;
+
+}
+h1{
+    font-weight: 600;
+    margin: 10px 0px;
+    font-size: x-large;
+    font-family: "Roboto", sans-serif;
+    text-transform: capitalize;
+
+}
+h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+
+}
+p{
+    width: 70%;
+    font-size: 14px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+.data{
+    width: 70%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border: 2px solid rgba(245, 245, 245, 0.515);
+   border-radius: 20px;
+   padding: 1rem;
+   background: rgba(34, 34, 34, 0.155);
+   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur(14px );
+}
+
+.content{
+    width:40%;
+    height: 100vh;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 30%;
+    flex-direction: column;
+    background: url("bg2.png");
+    background-position: center;
+    background-size: cover;
+        /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 40px );
+        -webkit-backdrop-filter: blur( 2px );
+        border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+}
+.options{
+    list-style: none;
+    display: flex;
+    flex-direction:row;
+    gap: 40px;
+    margin: 20px 0px;
+   
+}
+.options li i{
+    padding: 0.67rem;
+    background-color:rgba(0, 0, 0, 0.782);
+    font-size: large;
+    text-align: center;
+    border-radius: 20px;
+    backdrop-filter: blur(20px) saturate(200%);
+    -webkit-backdrop-filter: blur(20px) saturate(200%);
+    box-shadow: 0 4px 8px 0 rgba(131, 131, 131, 0.66), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.125);
+    transition: .3s all ease;
+    cursor: pointer;
+}
+.options li i:hover{
+    transform: translateY(-8px);
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 1.67rem;
+    
+}
+form input{
+    width: 370px;
+    padding: 0.67rem;
+    font-size: 13px;
+    font-style: bold;
+    border: none;
+    border-radius: 20px;
+    margin: 15px 0;
+    color:var(--cream);
+    backdrop-filter: blur(20px) saturate(200%);
+    -webkit-backdrop-filter: blur(20px) saturate(200%);
+    background-color:rgba(0, 0, 0, 0.485);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(200, 189, 189, 0.30), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.228);
+}
+input::selection,input::marker{
+    background: #000;
+}
+input::placeholder{
+    color: rgba(190, 188, 188, 0.705);
+}
+input:last-child{
+    background-color: rgb(53 53 53 / 21%);
+    color: #ffffff;
+    transition: all ease .3s;
+}
+input:last-child:hover{
+    transform: translateX(-5px);
+    transform: translateY(-5px);
+}
+label i{
+    position: absolute;
+    bottom: 202px;
+    left: 83%;
+    color :white;
+    cursor: pointer;
+}
+.switch {
+    position: relative;
+    display: flex;
+    width: 30px;
+    height: 20px;
+  }
+
+  .toggle{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #131313;
+    -webkit-transition: .4s;
+    border-radius: 50%;
+    transition: .4s;
+  }
+  input:checked + .slider::before{
+    background-color: rgb(255, 255, 255);
+  }
+  input:checked + .slider {
+    background-color: #48d7ff;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px black;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(10px);
+  }
+  .login li{
+    display: flex;
+     gap: 10px;
+     margin-bottom: 10px;
+     cursor: pointer;
+  }
+  .login h5{
+    font-weight: 500;
+  }
+
+  @media (max-width: 768px) {
+   
+    .content{
+        width: 100%;
+        height: 90vh;
+        position: static;
+        background: transparent;
+
+    }
+    .data{
+        width: 90%;
+        align-content: center;
+        /* display: none; */
+        padding: 10px;
+        margin-top: -10px
+    }
+    form input{
+       
+        font-size: 13px;
+        width: 250px;
+    }
+    form input:last-child{
+        width: 150px;
+        margin: 10px auto;
+    }
+    label i{
+        bottom: 184px;
+       left: 78%;
+    }
+    form label small{
+        font-size: 12;
+    }
+    h1{
+        margin-top: 5px;
+        font-size: larger;
+    }
+    p{
+        font-size: 12px;
+        width: 80%;
+    }
+    .options {
+        gap: 20px;
+    }
+    .toggle{
+        margin-bottom: 5px;
+    }
+    .login li{
+        gap: 20px;
+    }
+    
+    
+  }
