@@ -1,0 +1,638 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --cream: #f6f7f8;
+    --grey: #717384;
+    --black: #323339;
+    --yellow: #dbdde2;
+}
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 200,
+        'opsz' 24
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    /* border: 2px solid red; */
+}
+
+body {
+ 
+    color: var(--white);
+   
+}
+ small{
+    color: var(--yellow);
+ }
+
+ .conatiner{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 260px calc(100% - 260px);
+    background: url("hero.png");
+    background-position: center;
+    background-size: cover;
+
+}
+
+.sidebar {
+    width: 260px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(25 26 30 / 70%);
+    backdrop-filter: blur(7px);
+    --webkit-backdrop-filter: blur(30px);
+    border-right: 1px solid rgba(255, 255, 255, 0.7);
+
+    transition: all 0.3s ease;
+}
+
+.sidebar .logo {
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    padding: 25px 10px 15px;
+    margin-left: -30px;
+}
+
+.sidebar .logo img {
+    width: 70%;
+    left: 54px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.logo h2 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 15px;
+    display: block;
+    text-transform: uppercase;
+}
+.sidebar .links {
+    list-style: none;
+    margin-top: 20px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    height: calc(100% - 140px);
+    margin-left: -25px;
+}
+
+.links li {
+    display: flex;
+    border-radius: 4px;
+    align-items: center;
+    font-size: 14px;
+    width: 180px;
+    padding: 0 14px;
+    height: 50px;
+    margin-top:3px; 
+}
+.active{
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.124);
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4.5px );
+-webkit-backdrop-filter: blur( 4.5px );
+border-radius: 5px;
+border: .5px solid rgba(255, 255, 255, 0.437);
+}
+.links li:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.124);
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4.5px );
+-webkit-backdrop-filter: blur( 4.5px );
+border-radius: 5px;
+border: .5px solid rgba(255, 255, 255, 0.437);
+}
+
+.links h4 {
+    color: var(--white);
+    font-weight: 500;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.links hr {
+    margin: 10px 8px;
+    border: 1px solid #4c4c4c;
+    border-color: transparent;
+}
+
+.conatiner hr{
+    border: 2px solid rgba(128, 128, 128, 0.477); width: 80%; border-radius: 90%;}
+.links li span {
+    padding: 10px;
+    margin: 10px 0px;
+    /* padding: 12px 10px; */
+    background: rgb(106 106 110 / 27%);
+    border-radius: 100%;
+    font-size: 14px;
+    text-align: center;
+}
+
+.links li a {
+    padding: 10px;
+    color: var(--white );
+    display: block;
+    font-weight: 500;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.content{
+    width: calc(100% - 260px);
+    padding:1rem
+}
+
+.topnav{
+    height: 65px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 800px;
+}
+.right{
+    display: flex;
+    gap: 20px ;
+    text-align: center;
+   
+}
+.right input{
+    width: 220px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 8px 12px 8px 8px;
+    color: whitesmoke;
+    background: rgb(25 26 30 / 70%);
+    backdrop-filter: blur(30px);
+    --webkit-backdrop-filter: blur(17px);
+    border: .5px solid rgba(255, 255, 255, 0.437);
+
+}
+.right span{
+    background: transparent;
+    color: white;
+    height: 35px;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.subscription{
+    margin-top: 20px;
+    width: 120%;
+    /* border: 2px solid rgba(245, 245, 245, 0.607); */
+    border-radius: 10px;
+    padding: 15px;
+    background: rgb(25 26 30 / 70%);
+    backdrop-filter: blur(30px);
+    --webkit-backdrop-filter: blur(7px);
+    border: .5px solid rgba(255, 255, 255, 0.437);
+   font-size: 16px;
+   height: 606px;
+   text-transform: capitalize;
+   overflow-y: auto;
+   scrollbar-width: none;
+   
+
+}
+.blur{
+    width: 77%;
+    height: 84%;
+    border-radius: 10px;
+    background: rgb(25 26 30 / 70%);
+    backdrop-filter: blur(3px);
+    --webkit-backdrop-filter: blur(7px);
+    position: absolute;
+    margin-top: 20px;
+    z-index: 1;
+    display: none;
+}
+.subscription h2{
+    font-size: 16px;
+    margin: 8px 0px;
+}
+.subscription small{
+    font-size: 14px;
+}
+#more{
+    margin-right: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--white);
+   
+}
+#more a{
+    text-decoration: none;
+   
+}
+a h3{
+    font-size: 14px;
+}
+.subscription span{
+    font-size: 12px;
+    text-align: center;
+    color: var(--white);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    
+    
+  }
+  
+  th, td {
+    border-collapse:separate ;
+    padding: 12px 70px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd1c;
+    font-size: .65rem;
+  
+  }
+  th:first-child, td:first-child{
+    padding: 12px 0px;
+  }
+  table img{
+    width: 36px;
+    height: 36px;
+    margin-right: 20px;
+   
+  }
+  .logo{
+    display: flex;
+    align-items: center;
+  }
+  .logo h3{
+    font-weight: 500;
+    font-size: .875rem;
+  }
+  #cancel{
+    padding: 9px;
+    background: rgb(25 26 30 / 70%);
+    color: white;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .subscription a{
+    padding: 0.49rem;
+    font-size: 14px;
+    color: white;
+    border: 1px solid whitesmoke;
+    text-decoration: none;
+    border-radius: 10px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+
+  }
+  .home , span.search{
+    display: none;
+}
+.addapps{
+    display: flex;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: calc(50%);
+    right: calc(50% - 300px);
+    margin: 0px auto;
+    border-radius: 10px;
+    padding: 10px;
+    width: 300px;
+    height: 410px;
+    background: rgb(25 26 30 / 70%);
+    backdrop-filter: blur(30px);
+    --webkit-backdrop-filter: blur(7px);
+    border: .5px solid rgba(255, 255, 255, 0.437);
+    transform: translate(-50%, -50%);
+   font-size: 16px;
+   z-index: 99;
+   cursor: pointer;
+   transition: cubic-bezier(0.39, 0.575, 0.565, 1) all ease;
+}
+.addapps header, .appstxt header{
+    display: flex;
+    gap: 160px;
+    flex-direction: row;
+   
+    padding:8px;
+}
+.appslist{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    justify-content: space-between;
+    gap: 10px;
+}
+.approw{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+.approw .appname{
+    font-size: 14px;font-weight: 500px;
+    
+    
+}
+
+.approw button{
+    padding: 6px;
+    background: rgb(25 26 30 / 70%);
+    color: white;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    font-size: 8px;
+    display: flex;
+    font-weight: 400;
+    margin-left: 90px;
+    display: flex;
+    align-items: center;
+    width: 65px;
+    gap: 3px;
+}
+.appslist hr{
+    border: 2px solid #4c4c4c;
+    margin-top: 5px;
+    margin-left: 16px;
+    width: 90%;
+}
+.appslist h3{
+    width: 20px;
+    font-size: 10px;
+    font-weight: 400;
+}
+.appslist a{
+    padding: 0.39rem;
+    margin-bottom: 10px;
+    
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 40%;
+}
+.appslist a h3{
+    font-size: 12px;
+    color: white;
+   font-weight: 400;
+   width: auto;
+}
+.addapps img{
+    width: 30px;
+    height: 33px;
+}
+.appstxt{
+    display: flex;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: calc(50%);
+    right: calc(50% - 300px);
+    margin: 0px auto;
+    border-radius: 10px;
+    padding: 10px;
+    width: 300px;
+    height: 410px;
+    /* gap: 20px; */
+    background: rgb(25 26 30 / 90%);
+    backdrop-filter: blur(30px);
+    --webkit-backdrop-filter: blur(7px);
+    border: .5px solid rgba(255, 255, 255, 0.437);
+    transform: translate(-50%, -50%);
+   font-size: 16px;
+   z-index: 99;
+   cursor: pointer;
+   text-transform: capitalize;
+   transition: cubic-bezier(0.39, 0.575, 0.565, 1) all ease;
+}
+
+.appstxt ul li{
+    list-style: none;
+    padding: 1rem;
+   display: flex;
+   align-items: center;
+}
+.datafeild{
+    margin-top: 20px;
+}
+.appstxt a{
+    padding: 0.49rem;
+    font-size: 14px;
+    width: 40%;
+    margin: 0px auto;
+    color: white;
+    border: 1px solid whitesmoke;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+    /* border: 1px solid red; */
+    
+}
+.appstxt input{
+    width: 120px;
+    padding: 6px;
+    margin-left: 20px;
+    background: transparent;
+    border: none;
+    color: var(--cream);
+    font-weight: 600;
+    cursor: pointer;
+}
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+    padding: 6px;
+    width: 120px;
+    font-size: 14px;
+    border-radius: 5px;
+   margin-left: 10px;
+  }
+  select:focus {
+    outline: none;
+    border: 1px solid #fff;
+  }
+  option {
+    background-color: #333;
+    color: #fff;
+   
+  } .appstxt #date{
+    padding: 4px 6px 4px 6px;
+    border: 1px solid whitesmoke;
+    color: var(--cream);
+    background-color: #4c4c4c1d;
+    border-radius: 5px;
+    margin-left: 10px;
+   
+
+ }
+ .appstxt h3{
+    font-size: 16px;
+    margin-left: 10px;
+    color: var(--cream);
+    text-align: center;
+    font-weight: 500;
+ }
+.appstxt label{
+    font-size: 16px;
+    font-weight: 500;
+}
+  @media (max-width: 768px) {
+    .conatiner{
+        height: 150vh;
+        display: block;
+        background-image: url("mobbg.png");
+        background-repeat: repeat;
+    }
+    .content{
+        width: 100%;
+        padding: 1rem;
+        /* display: none; */
+    }
+     .conatiner hr {
+        border-color: transparent;
+    }
+    
+    .sidebar .links li a {
+        display: none;
+    }
+    
+    .sidebar .links h4 {
+        display: none;
+    }
+    .sidebar .logo h2 {
+        display: none;
+    }
+    .home , .search{
+        display: contents;
+    }
+    .logo{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .logo h3{
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .sidebar {
+        display: none;
+    
+    } 
+    .logo input{
+        display: none;
+    }
+    .topnav{
+        gap: 120px;
+    }
+    .topnav span{
+        display: none;
+    }
+    .topnav span:last-child , .topnav span:first-child{
+        display: inline;
+    }
+    .title{
+       width: 200px;
+       padding: 10px;
+       flex-direction: column;
+       padding-bottom: 0px;
+       margin-left: 10px;
+    }
+    .title h2{
+        font-size: large;
+        font-weight: 400;
+    }
+    .title h3{
+        font-size: 12px;
+        font-weight: 200;
+    }
+    .title img{
+        height: 60px;
+        width: 193px;
+        gap: 5px;
+        background: black;
+        border-radius:0 0 20px 20px;
+        margin-bottom: -10px;
+    }
+    .calendar{
+        display: none;
+    }
+    header{
+        flex-direction:  row;  
+        justify-content: center;
+        align-content: center;
+    }
+    .year{
+        width: 190px;
+        font-weight: 400;
+        font-size: 13px;
+        padding: 2rem;
+    }
+    .year span{
+        font-size: small;
+        margin: 20px auto;
+        padding: 0.37rem;
+    }
+    .btn {
+        gap: 40px;
+    }
+    .apps{
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .apps li{
+        width: 350px;
+        
+    }
+    .apps img{
+        width: 60px;
+        height: 60px;
+        margin-left: 70px;
+    }
+    .subscription{
+        width: 350px;
+    }
+    .subscription {
+    font-size: 15px;
+    }
+    table img{
+        width: 30px;
+        height: 30px;
+        margin-right: 20px;
+       
+      }
+      }
