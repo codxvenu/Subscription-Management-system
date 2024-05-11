@@ -176,7 +176,7 @@ border: .5px solid rgba(255, 255, 255, 0.437);
     display: flex;
     gap: 20px ;
     text-align: center;
-   
+   align-items: center;
 }
 .right input{
     width: 220px;
@@ -415,10 +415,10 @@ table {
   }
   @media (max-width: 768px) {
 .conatiner{
-    height: 150vh;
+    height: auto;
     display: block;
-    background-image: url("mobbg.png");
-    background-repeat: repeat;
+    background-image: url("bg.png");
+    /* background-repeat: repeat; */
 }
 .content{
     width: 100%;
@@ -428,44 +428,61 @@ table {
  .conatiner hr {
     border-color: transparent;
 }
-
-.sidebar .links li a {
-    display: none;
-}
-
-.sidebar .links h4 {
-    display: none;
-}
-.sidebar .logo h2 {
-    display: none;
-}
 .home , .search{
     display: contents;
 }
 .logo{
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: row;
+    width: 40%;
 }
 .logo h3{
     font-size: 15px;
     font-weight: 400;
 }
+.logo h2{
+    font-size: 20px;
+}
 .sidebar {
     display: none;
-
-} 
+    position: fixed;
+    z-index: 99;
+    width: 200px;
+}
+.sidebar .links{
+    margin-left: 5px;
+}
+.close{
+    margin-left: 140px;
+    margin-bottom: -5px;
+    margin-top: 10px;
+}
 .logo input{
     display: none;
 }
 .topnav{
-    gap: 120px;
+    gap: 130px;
+        position: fixed;
+        z-index: 99;
+        height: 40px;
+        background-color: #1313137e;
+        padding: 10px;
+        top: 0;
+        right: auto;
+        left: 0;
+        padding: 5px 20px;
+        backdrop-filter: blur(10px);
+
 }
 .topnav span{
     display: none;
+    cursor: pointer;
 }
 .topnav span:last-child , .topnav span:first-child{
     display: inline;
+    font-size: larger;
+    display: flex;
+    align-items: center;
 }
 .title{
    width: 200px;
@@ -473,6 +490,7 @@ table {
    flex-direction: column;
    padding-bottom: 0px;
    margin-left: 10px;
+   gap: 30px;
 }
 .title h2{
     font-size: large;
@@ -497,6 +515,7 @@ header{
     flex-direction:  row;  
     justify-content: center;
     align-content: center;
+    margin-top: 65px;
 }
 .year{
     width: 190px;
@@ -528,14 +547,25 @@ header{
 }
 .subscription{
     width: 350px;
+    font-size: 15px;
+    overflow: hidden;
 }
-.subscription {
-font-size: 15px;
+table{
+    overflow-x: scroll;
 }
 table img{
     width: 30px;
     height: 30px;
     margin-right: 20px;
    
+  }
+  #cancel{
+    display: none ;
+  }
+  th, td {
+    padding: 12px 12px;
+  }
+  th:last-child{
+    display: none;
   }
   }
