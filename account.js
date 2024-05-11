@@ -64,7 +64,8 @@ const addapp = (names, imgs, prices, dates, statuss) => {
     const priceElement = document.createElement('td');
     priceElement.innerHTML = prices;
     const dateElement = document.createElement('td');
-    dateElement.innerHTML = dates;
+    const datename = document.createElement("h3")
+    datename.innerHTML = dates;
     const statusElement = document.createElement('td');
     statusElement.innerHTML = statuss;
     const btn = document.createElement('td');
@@ -76,6 +77,7 @@ const addapp = (names, imgs, prices, dates, statuss) => {
     btn.appendChild(cancel);
     logo.appendChild(imgElement);
     logo.appendChild(nameElement);
+    dateElement.appendChild(datename)
     tr.append(logo, priceElement, dateElement, statusElement, btn);
     tablebody.appendChild(tr);
     apps.style.display = app.style.display = blur.style.display = "none";
