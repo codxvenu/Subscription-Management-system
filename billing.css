@@ -348,18 +348,176 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-.invoices .head{
+.invoices .head, .information .head{
     display: flex;
     justify-content: space-between;
     font-size: 14px;
     font-weight: 500;
     margin-bottom: 20px;
 }
+
+.invoices .right span{
+    background: transparent;
+color: white;
+height: 13px;
+border-radius: 20px;
+padding: 5px;
+font-size: 14px;
+margin-top: 5px;
+color: green;
+text-align: center;
+margin: -4px auto;
+}
+
+.invoices .right span.green{
+    color: green;
+}
+.invoices .right span.red{color: red;}
+.invoices .right span.grey{
+    color: grey;
+}
+.addcard .data{
+    display: flex;
+    gap: 10px;
+}
 .invoices ul li h3{
     font-size: 14px;
     font-weight: 400;
 }
+.end{
+    width: 126%;
+    height: 34vh;
+    margin-top: 15px;
+    display: flex;
+    gap: 20px;
+}
+.information{
+    padding: 1rem;
+    width: 50%;
+    height:110%;
+    background: rgb(25 26 30 / 70%);
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
+    --webkit-backdrop-filter: blur(7px);
+    border: .5px solid rgba(255, 255, 255, 0.437);
+    font-size: 12px;
+}
+.information small{
+    font-weight: 400;
+    font-size: 11px;
+    color: #c1c1c1f7;
+}
+.information .data{
+    margin-top: -11px;
+}
+.information .left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.information .down{
+    border: 2px solid red;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 4px;
+    color: red;
+}
+.information .up{
+    border: 2px solid green;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 4px;
+    color: green;
+}
+.information .pending{
+    border: 2px solid gray;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 4px;
+    color: gray;
+}
 
+.information .app h3{
+    font-size: 10px;
+    
+}
+.heading{
+    top: 5px;
+    position: relative;
+}
+.information a{
+    font-size: 12px;
+    text-align: center;
+    margin-right: 10px;
+}
+.information .app{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.msg{
+    background: rgba(25, 26, 30, 0.205);
+    border-radius: 10px;
+    --webkit-backdrop-filter: blur(7px);
+    border: .5px solid rgba(255, 255, 255, 0.437);
+    padding: 1.09rem;
+    margin-top: 0px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.msg h3:first-child{
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+}
+.msg h3{
+    font-size: 10px;
+    font-weight: 400;
+    color: #c1c1c1f7;
+}
+.head1{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.head1 h3{
+    font-size: 14px;
+}
+.head1 a span{
+    color: var(--cream);
+    border: none;
+    padding: 0;
+}
+.msg .head{
+    font-size: 10px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin-bottom: 5px;
+}
+.action small{
+    color: red;
+    font-weight: 700;
+    cursor: pointer;
+}
+.action .edit span,.edit small{
+    color: whitesmoke;
+}
+.action a span{
+    border:none;
+    border-radius: 0px;
+    font-size: 12px;
+    padding: 0;
+    color: red;
+    cursor: pointer;
+    
+}
+.addcard .head a span{
+    display: none;
+}
 @media (max-width: 768px) {
     .conatiner{
         height: auto;
@@ -370,6 +528,7 @@ header{
     .content{
         width: 100%;
         padding: 1rem;
+        height: auto;
         /* display: none; */
     }
      .conatiner hr {
@@ -444,6 +603,20 @@ header{
         margin: 20px auto;
         width: 90%;
     }
+    .addcard .data{
+        display: flex;
+        flex-direction: column;
+    }
+    .addcard a{
+        border: none;
+        padding: 0;
+    }
+    .addcard .head small{ 
+        display: none;
+    }
+    .addcard .head a span{
+        display: block;
+    }
     .addcard input{
         width: 305px;
         padding: 0.67rem 3rem;
@@ -457,7 +630,7 @@ header{
         margin-left: 20px;
         position: absolute;
         top: auto;
-        bottom: 110px;
+        bottom: 120px;
     }
     .last{
         left: 7px;
@@ -469,5 +642,21 @@ header{
         width: 90%;
         height: auto;
         margin: 20px auto;
+    }
+    .end{
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .information{
+        width: 100%;
+        
+    }
+    .msg .head{
+        grid-template-columns: 2fr 1fr;
+        gap: 129px;
+    }
+    .action a small{
+        display: none;
     }
 }
