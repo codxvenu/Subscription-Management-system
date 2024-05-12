@@ -518,9 +518,9 @@ margin: -4px auto;
 .addcard .head a span{
     display: none;
 }
-@media (max-width: 360px) {
+@media (max-width: 768px) {
     .conatiner{
-        height: auto;
+        height: 120vh;
         display: block;
         background-image: url("bg.png");
         /* background-repeat: repeat; */
