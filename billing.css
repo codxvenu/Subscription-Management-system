@@ -17,6 +17,7 @@
         'GRAD' 200,
         'opsz' 24
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -26,15 +27,16 @@
 }
 
 body {
- 
-    color: var(--white);
-   
-}
- small{
-    color: var(--yellow);
- }
 
- .conatiner{
+    color: var(--white);
+
+}
+
+small {
+    color: var(--yellow);
+}
+
+.conatiner {
     height: 100vh;
     width: 100%;
     display: grid;
@@ -81,6 +83,7 @@ body {
     display: block;
     text-transform: uppercase;
 }
+
 .sidebar .links {
     list-style: none;
     margin-top: 20px;
@@ -98,28 +101,31 @@ body {
     width: 180px;
     padding: 0 14px;
     height: 50px;
-    margin-top:3px; 
+    margin-top: 3px;
 }
-.close{
+
+.close {
     display: none;
 }
-.active{
+
+.active {
     cursor: pointer;
     background: rgba(255, 255, 255, 0.124);
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 4.5px );
--webkit-backdrop-filter: blur( 4.5px );
-border-radius: 5px;
-border: .5px solid rgba(255, 255, 255, 0.437);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+    border-radius: 5px;
+    border: .5px solid rgba(255, 255, 255, 0.437);
 }
+
 .links li:hover {
     cursor: pointer;
     background: rgba(255, 255, 255, 0.124);
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 4.5px );
--webkit-backdrop-filter: blur( 4.5px );
-border-radius: 5px;
-border: .5px solid rgba(255, 255, 255, 0.437);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+    border-radius: 5px;
+    border: .5px solid rgba(255, 255, 255, 0.437);
 }
 
 .links h4 {
@@ -135,8 +141,12 @@ border: .5px solid rgba(255, 255, 255, 0.437);
     border-color: transparent;
 }
 
-.conatiner hr{
-    border: 2px solid rgba(128, 128, 128, 0.477); width: 80%; border-radius: 90%;}
+.conatiner hr {
+    border: 2px solid rgba(128, 128, 128, 0.477);
+    width: 80%;
+    border-radius: 90%;
+}
+
 .links li span {
     padding: 10px;
     margin: 10px 0px;
@@ -149,32 +159,34 @@ border: .5px solid rgba(255, 255, 255, 0.437);
 
 .links li a {
     padding: 10px;
-    color: var(--white );
+    color: var(--white);
     display: block;
     font-weight: 500;
     white-space: nowrap;
     text-decoration: none;
 }
 
-.content{
+.content {
     width: calc(100% - 260px);
-    padding:1rem
+    padding: 1rem
 }
 
-.topnav{
+.topnav {
     height: 65px;
     width: 100%;
     display: flex;
     flex-direction: row;
     gap: 800px;
 }
-.right{
+
+.right {
     display: flex;
-    gap: 20px ;
+    gap: 20px;
     text-align: center;
-   
+
 }
-.right input{
+
+.right input {
     width: 220px;
     height: 40px;
     border-radius: 20px;
@@ -186,7 +198,8 @@ border: .5px solid rgba(255, 255, 255, 0.437);
     border: .5px solid rgba(255, 255, 255, 0.437);
 
 }
-.right span{
+
+.right span {
     background: transparent;
     color: white;
     height: 35px;
@@ -195,16 +208,20 @@ border: .5px solid rgba(255, 255, 255, 0.437);
     font-size: 14px;
     margin-top: 5px;
 }
-.home , span.search{
+
+.home,
+span.search {
     display: none;
 }
-header{
+
+header {
     width: 80%;
     height: auto;
     display: flex;
     gap: 40px;
 }
-.card{
+
+.card {
     width: 100%;
     height: 30%;
     background: rgb(25 26 30 / 70%);
@@ -213,19 +230,25 @@ header{
     border-radius: 10px;
     --webkit-backdrop-filter: blur(7px);
     border: .5px solid rgba(255, 255, 255, 0.437);
-    background: url("https://img.freepik.com/free-vector/blue-wavy-background-with-line-wave_677411-919.jpg?t=st=1715450250~exp=1715453850~hmac=558ec0fa74d194c3db0e51fa671966d5abe5ae962b24d9285ade075e9fae4bba&w=1060");
-    background-position: 0 175px;
+     background-position: 0 175px;
     background-size: cover;
     /* background-repeat: no-repeat; */
     opacity: 0.95;
 }
-.visa{
-    background-image: url("https://img.freepik.com/free-vector/gradient-black-background-with-cubes_23-2149152314.jpg?t=st=1715449567~exp=1715453167~hmac=40abe49874614821303df7aa8c27c4be9fd721162cce91bda53ba2e52c5b047a&w=996");
+.nocontent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    margin: 20px auto;
+    justify-content: center;
+    gap: 20px;
 }
-.card div{
+.card div {
     margin-top: 40px;
 }
-.txt a{
+
+.txt a {
     display: flex;
     flex-direction: row;
     gap: 30px;
@@ -233,15 +256,18 @@ header{
     margin-top: 10px;
     font-size: 22px;
 }
-.txt a:last-child{
+
+.txt a:last-child {
     gap: 75px;
     margin-top: 0;
     font-weight: 800;
 }
-.card small{
+
+.card small {
     font-size: 12px;
 }
-.card img{
+
+.card img {
     width: 50px;
     position: absolute;
     right: 20px;
@@ -249,7 +275,8 @@ header{
     bottom: auto;
     left: auto;
 }
-.addcard{
+
+.addcard {
     width: 80%;
     height: auto;
     margin-top: 20px;
@@ -260,14 +287,16 @@ header{
     --webkit-backdrop-filter: blur(7px);
     border: .5px solid rgba(255, 255, 255, 0.437);
 }
-.addcard .head{
-        display: flex;
-        justify-content: space-between;
-        font-size: 14px;
-        font-weight: 500;
-        margin-bottom: 10px;
-    }
-.addcard a{
+
+.addcard .head {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.addcard a {
     padding: 0.49rem;
     font-size: 12px;
     color: white;
@@ -281,23 +310,24 @@ header{
     flex-direction: row;
     cursor: pointer;
 }
-.addcard input{
+
+.addcard input {
     width: 370px;
     padding: 0.67rem 3rem;
     font-size: 13px;
     border-radius: 20px;
     margin: 15px 0;
-    color:var(--cream);
+    color: var(--cream);
     backdrop-filter: blur(20px) saturate(200%);
     -webkit-backdrop-filter: blur(20px) saturate(200%);
-    background-color:rgba(0, 0, 0, 0.485);
+    background-color: rgba(0, 0, 0, 0.485);
     border-radius: 12px;
     box-shadow: 0 4px 8px 0 rgba(200, 189, 189, 0.30), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     cursor: pointer;
     border: 1px solid rgba(255, 255, 255, 0.228);
 }
 
-.icon{
+.icon {
     width: 330px;
     height: auto;
     margin-left: 20px;
@@ -307,24 +337,29 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size:8px ;
+    font-size: 8px;
     color: var(--white);
     z-index: 99;
 }
-.icon span{
+
+.icon span {
     font-size: 12px;
 }
-.icon img{
+
+.icon img {
     width: 20px;
 }
-.last img{
+
+.last img {
     width: 30px;
 }
-.last{
+
+.last {
     left: 49%;
     bottom: 45px;
 }
-.invoices{
+
+.invoices {
     position: absolute;
     top: 80px;
     width: 28%;
@@ -338,17 +373,21 @@ header{
     --webkit-backdrop-filter: blur(17px);
 
 }
-.invoices ul{
+
+.invoices ul {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.invoices ul li{
+
+.invoices ul li {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.invoices .head, .information .head{
+
+.invoices .head,
+.information .head {
     display: flex;
     justify-content: space-between;
     font-size: 14px;
@@ -356,45 +395,53 @@ header{
     margin-bottom: 20px;
 }
 
-.invoices .right span{
+.invoices .right span {
     background: transparent;
-color: white;
-height: 13px;
-border-radius: 20px;
-padding: 5px;
-font-size: 14px;
-margin-top: 5px;
-color: green;
-text-align: center;
-margin: -4px auto;
+    color: white;
+    height: 13px;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 14px;
+    margin-top: 5px;
+    color: green;
+    text-align: center;
+    margin: -4px auto;
 }
 
-.invoices .right span.green{
+.invoices .right span.green {
     color: green;
 }
-.invoices .right span.red{color: red;}
-.invoices .right span.grey{
+
+.invoices .right span.red {
+    color: red;
+}
+
+.invoices .right span.grey {
     color: grey;
 }
-.addcard .data{
+
+.addcard .data {
     display: flex;
     gap: 10px;
 }
-.invoices ul li h3{
+
+.invoices ul li h3 {
     font-size: 14px;
     font-weight: 400;
 }
-.end{
+
+.end {
     width: 126%;
     height: 34vh;
     margin-top: 15px;
     display: flex;
     gap: 20px;
 }
-.information{
+
+.information {
     padding: 1rem;
     width: 50%;
-    height:110%;
+    height: 110%;
     background: rgb(25 26 30 / 70%);
     backdrop-filter: blur(30px);
     border-radius: 10px;
@@ -402,35 +449,41 @@ margin: -4px auto;
     border: .5px solid rgba(255, 255, 255, 0.437);
     font-size: 12px;
 }
-.information small{
+
+.information small {
     font-weight: 400;
     font-size: 11px;
     color: #c1c1c1f7;
 }
-.information .data{
+
+.information .data {
     margin-top: -11px;
 }
-.information .left{
+
+.information .left {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
 }
-.information .down{
+
+.information .down {
     border: 2px solid red;
     border-radius: 50%;
     font-size: 12px;
     padding: 4px;
     color: red;
 }
-.information .up{
+
+.information .up {
     border: 2px solid green;
     border-radius: 50%;
     font-size: 12px;
     padding: 4px;
     color: green;
 }
-.information .pending{
+
+.information .pending {
     border: 2px solid gray;
     border-radius: 50%;
     font-size: 12px;
@@ -438,26 +491,30 @@ margin: -4px auto;
     color: gray;
 }
 
-.information .app h3{
+.information .app h3 {
     font-size: 10px;
-    
+
 }
-.heading{
+
+.heading {
     top: 5px;
     position: relative;
 }
-.information a{
+
+.information a {
     font-size: 12px;
     text-align: center;
     margin-right: 10px;
 }
-.information .app{
+
+.information .app {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 10px;
 }
-.msg{
+
+.msg {
     background: rgba(25, 26, 30, 0.205);
     border-radius: 10px;
     --webkit-backdrop-filter: blur(7px);
@@ -467,164 +524,370 @@ margin: -4px auto;
     border-radius: 20px;
     margin-bottom: 10px;
 }
-.msg h3:first-child{
+
+.msg h3:first-child {
     font-size: 12px;
     font-weight: 500;
     color: white;
 }
-.msg h3{
+
+.msg h3 {
     font-size: 10px;
     font-weight: 400;
     color: #c1c1c1f7;
 }
-.head1{
+
+.head1 {
     display: flex;
     justify-content: space-between;
     font-size: 14px;
     font-weight: 500;
     margin-bottom: 10px;
 }
-.head1 h3{
+
+.head1 h3 {
     font-size: 14px;
 }
-.head1 a span{
+
+.head1 a span {
     color: var(--cream);
     border: none;
     padding: 0;
 }
-.msg .head{
+
+.msg .head {
     font-size: 10px;
     display: grid;
     grid-template-columns: 3fr 1fr;
     margin-bottom: 5px;
 }
-.action small{
+
+.action small {
     color: red;
     font-weight: 700;
     cursor: pointer;
 }
-.action .edit span,.edit small{
+
+.action .edit span,
+.edit small {
     color: whitesmoke;
 }
-.action a span{
-    border:none;
+
+.action a span {
+    border: none;
     border-radius: 0px;
     font-size: 12px;
     padding: 0;
     color: red;
     cursor: pointer;
-    
+
 }
-.addcard .head a span{
+
+.addcard .head a span {
     display: none;
 }
+
+.blur {
+    width: 81%;
+    height: 87vh;
+    border-radius: 10px;
+    background: rgb(25 26 30 / 70%);
+    backdrop-filter: blur(3px);
+    --webkit-backdrop-filter: blur(7px);
+    position: absolute;
+    /* margin-top: 20px; */
+    z-index: 1;
+    display: none;
+    top: auto;
+    bottom: 20px;
+    right: 19px;
+}
+.credit-card {
+    width: 360px;
+    height: 400px;
+    display: none;
+    margin: 0px auto;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: rgb(25 26 30 / 70%);
+    backdrop-filter: blur(3px);
+    --webkit-backdrop-filter: blur(7px);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: calc(50% - 200px);
+    right: calc(45% - 145px);
+    z-index: 99;
+    color: white;
+}
+
+.form-header {
+    height: 60px;
+    padding: 20px 30px 0;
+    border-bottom: 1px solid #E1E8EE;
+}
+
+.form-body {
+    height: 340px;
+    padding: 30px 30px 20px;
+}
+
+/* Title */
+
+.title {
+    margin: 0;
+    color: var(--cream);
+    font-size: 18px;
+    display: flex;
+    gap: 120px;
+    cursor: pointer;
+}
+
+/* Common */
+
+.card-number,
+.cvv-input input,
+.month input,
+.paypal-btn,
+.proceed-btn,
+.year input {
+    height: 42px;
+}
+
+.card-number,
+.month input,
+.year input {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 14px;
+}
+
+.card-number,
+.cvv-details,
+.cvv-input input,
+.month input,
+.year input {
+    color: var(--cream);
+    opacity: .7;
+    background: transparent;
+
+}
+
+/* Card Number */
+
+.card-number {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border: 2px solid #e1e8ee;
+    border-radius: 6px;
+}
+.month input,
+.year input {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    width: 145px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border: 2px solid #e1e8ee;
+    border-radius: 6px;
+    background-position: 85% 50%;
+}
+
+.month input {
+    float: left;
+}
+
+.year input {
+    float: right;
+}
+
+
+
+.cvv-input input {
+    width: 145px;
+    float: left;
+    padding-left: 20px;
+    border: 2px solid #e1e8ee;
+    border-radius: 6px;
+    
+}
+
+.cvv-details {
+    float: right;
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+}
+
+.cvv-details p {
+    margin-top: 6px;
+    color: white;
+}
+.proceed-btn {
+    cursor: pointer;
+    width: 50%;
+    border-color: transparent;
+    border-radius: 6px;
+    font-size: 16px;
+    margin: 5px 75px;
+}
+
+.proceed-btn {
+    margin-bottom: 10px;
+    background: transparent;
+    border: 2px solid whitesmoke;
+}
+
+.proceed-btn a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.proceed-btn a {
+    color: var(--cream);
+}
+select option{
+    background-color: rgb(25 26 30 / 70%);
+}
 @media (max-width: 768px) {
-    .conatiner{
+    .conatiner {
         height: 230vh;
         display: block;
         background-image: url("bg.png");
         /* background-repeat: repeat; */
     }
-    .content{
+
+    .content {
         width: 100%;
         padding: 1rem;
         height: auto;
         /* display: none; */
     }
-     .conatiner hr {
+
+    .conatiner hr {
         border-color: transparent;
     }
-    .home , .search{
+
+    .home,
+    .search {
         display: contents;
     }
-    .logo{
+
+    .logo {
         display: flex;
         flex-direction: row;
         width: 40%;
     }
-    .logo h3{
+
+    .logo h3 {
         font-size: 15px;
         font-weight: 400;
     }
-    .logo h2{
+
+    .logo h2 {
         font-size: 20px;
     }
+
     .sidebar {
         display: none;
         position: fixed;
         z-index: 99;
         width: 200px;
     }
-    .sidebar .links{
+
+    .sidebar .links {
         margin-left: 5px;
     }
-    .close{
+
+    .close {
         margin-left: 140px;
         margin-bottom: -5px;
         margin-top: 10px;
     }
-    .logo input{
+
+    .logo input {
         display: none;
     }
-    .topnav{
-        gap: 120px;
-            position: fixed;
-            z-index: 99;
-            height: 40px;
-            background-color: #1313137e;
-            padding: 10px;
-            top: 0;
-            right: auto;
-            left: 0;
-            padding: 5px 20px;
-            backdrop-filter: blur(10px);
+
+    .topnav {
+        gap: 32%;
+        position: fixed;
+        z-index: 99;
+        height: 40px;
+        background-color: #1313137e;
+        padding: 10px;
+        top: 0;
+        right: auto;
+        left: 0;
+        padding: 5px 20px;
+        backdrop-filter: blur(10px);
     }
-    .topnav span{
+
+    .topnav span {
         display: none;
         cursor: pointer;
+        height: auto;
+        padding: 0;
+        border-radius: 0;
+        margin-top: 0;
+
+
     }
-    .topnav span:last-child , .topnav span:first-child{
+
+    .topnav span:last-child,
+    .topnav span:first-child {
         display: inline;
         font-size: larger;
         display: flex;
         align-items: center;
     }
-    header{
+
+    header {
         flex-direction: column;
         gap: 20px;
         margin: 50px auto;
         width: 100%;
     }
-    .card{
+
+    .card {
         width: 90%;
         margin: 0px auto;
     }
-    .addcard{
+
+    .addcard {
         margin: 20px auto;
         width: 90%;
     }
-    .addcard .data{
+
+    .addcard .data {
         display: flex;
         flex-direction: column;
     }
-    .addcard a{
+
+    .addcard a {
         border: none;
         padding: 0;
     }
-    .addcard .head small{ 
+
+    .addcard .head small {
         display: none;
     }
-    .addcard .head a span{
+
+    .addcard .head a span {
         display: block;
     }
-    .addcard input{
+
+    .addcard input {
         width: 100%;
         padding: 0.67rem 3rem;
         font-size: 13px;
         border-radius: 20px;
         margin: 15px 0;
     }
-    .icon{
+
+    .icon {
         width: 78%;
         height: auto;
         margin-left: 6%;
@@ -632,32 +895,42 @@ margin: -4px auto;
         top: auto;
         bottom: 120px;
     }
-    .last{
+
+    .last {
         left: 7px;
         bottom: 45px;
         width: 80%;
     }
-    .invoices{
+
+    .invoices {
         position: static;
         width: 90%;
         height: auto;
         margin: 20px auto;
     }
-    .end{
+
+    .end {
         flex-direction: column;
         width: 90%;
         margin: 0 auto;
     }
-    .information{
+
+    .information {
         width: 100%;
         height: auto;
-        
+
     }
-    .msg .head{
+
+    .information:first-child .head a {
+        display: none;
+    }
+
+    .msg .head {
         grid-template-columns: 2fr 1fr;
-        gap: 36%;
+        gap: 24%;
     }
-    .action a small{
+
+    .action a small {
         display: none;
     }
 }

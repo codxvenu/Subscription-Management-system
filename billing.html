@@ -12,6 +12,7 @@
 
 <body>
     <div class="conatiner">
+        <div class="blur"></div>
         <aside class="sidebar">
             <span class="material-symbols-outlined close" onclick="navigation()">close</span>
             <div class="logo">
@@ -61,270 +62,336 @@
             </nav>
             <header>
                 <div class="card">
-                    <img src="https://simey-credit-card.netlify.app/img/logos/master.svg" alt="">
-                    <div class="txt">
-                        <h3>7812 2139 0823 XXXX</h3>
-                        <a> <small>VALID THRUV</small>
-                            <small>CVV</small></a>
-                        <a> <small>05/24</small>
-                            <small>09X</small></a>
-                    </div>
+                <div class="nocontent">
+                    <h3>No Card</h3>
+                    <p>Add a Card From Add Card Section</p>
+                </div>
                 </div>
                 <div class="card visa">
-                    <img src="https://i.ibb.co/WHZ3nRJ/visa.png" alt="">
-                    <div class="txt">
-                        <h3>7812 2139 0823 XXXX</h3>
-                        <a> <small>VALID THRUV</small><small>05/24</small></a>
-                        <a> <small>CVV</small><small>09X</small></a>
+                    <div class="nocontent nocontentvisa">
+                        <h3>No Card</h3>
+                        <p>Add a Card From Add Card Section</p>
                     </div>
                 </div>
-               
+
             </header>
             <div class="addcard">
                 <div class="head">
                     <h3>Payment Method</h3>
-                    <a ><small>Add New Card</small> <span class="material-symbols-outlined">
-                        add
+                    <a><small>Add New Card</small> <span class="material-symbols-outlined">
+                            add
                         </span></a>
                 </div>
-                <div class="data"> 
+                <div class="data">
                     <div class="icon">
                         <img src="https://simey-credit-card.netlify.app/img/logos/master.svg" alt="">
                         <span class="material-symbols-outlined">
                             edit
-                            </span>
+                        </span>
                     </div>
-                    <input type="text" placeholder="7812 2139 0823 XXXX">
+                    <input type="text" placeholder="7812 2139 0823 XXXX" readonly id="master"
+                        onclick="showcard('Master')">
                     <div class="icon last">
                         <img src="https://i.ibb.co/WHZ3nRJ/visa.png" alt="">
                         <span class="material-symbols-outlined">
                             edit
-                            </span>
+                        </span>
                     </div>
-                    <input type="text" placeholder="7812 2139 0823 XXXX" readonly>
+                    <input type="text" placeholder="7812 2139 0823 XXXX" readonly id="visa" onclick="showcard('Visa')">
                 </div>
             </div>
             <div class="invoices">
                 <div class="head">
                     <h3>Payment Method</h3>
-                    <a ><span class="material-symbols-outlined">
-                        more_vert
+                    <a><span class="material-symbols-outlined">
+                            more_vert
                         </span></a>
                 </div>
                 <div class="data">
-                   <ul>
-                    <li>
-                        <h3 class="date">June,01,2020</h3>
-                    <div class="right">
-                        <h3>$180</h3>
-                    <span class="material-symbols-outlined green">
-fiber_manual_record
-</span>
-                    <h3>PDF</h3>
-                    </li>
-                    <li>
-                        <h3 class="date">April,01,2020</h3>
-                    <div class="right">
-                        <h3>$120</h3>
-                    <span class="material-symbols-outlined grey">
-fiber_manual_record
-</span>
-                    <h3>PDF</h3>
-                    </li>
-                    <li>
-                        <h3 class="date">May,01,2020</h3>
-                    <div class="right">
-                        <h3>$109</h3>
-                    <span class="material-symbols-outlined red">
-fiber_manual_record
-</span>
-                    <h3>PDF</h3>
-                    </li>
-                    <li>
-                        <h3 class="date">March,01,2020</h3>
-                    <div class="right">
-                        <h3>$162</h3>
-                    <span class="material-symbols-outlined green">
-fiber_manual_record
-</span>
-                    <h3>PDF</h3>
-                    </li>
-                    <li>
-                        <h3 class="date">Fwbruary,10,2020</h3>
-                    <div class="right">
-                        <h3>$198</h3>
-                    <span class="material-symbols-outlined green">
-fiber_manual_record
-</span>
-                    <h3>PDF</h3>
-                    </li>
-                    <li>
-                        <h3 class="date">April,05,2020</h3>
-                    <div class="right">
-                        <h3>$65</h3>
-                    <span class="material-symbols-outlined grey">
-fiber_manual_record
-</span>
-                    <h3>PDF</h3>
-                    </li>
-                    <li>
-                        <h3 class="date">June,25,2020</h3>
-                    <div class="right">
-                        <h3>$09</h3>
-                    <span class="material-symbols-outlined red">
-fiber_manual_record
-</span>
-                    <h3>PDF</h3>
-                    </li>
-                    <li>
-                        <h3 class="date">June,01,2020</h3>
-                    <div class="right">
-                        <h3>$129</h3>
-                    <span class="material-symbols-outlined grey">
-fiber_manual_record
-</span>
-                    <h3>PDF</h3>
-                    </li>
-                   </ul>
-                    
-                    </div>
-                    
+                    <ul>
+                        <li>
+                            <h3 class="date">June,01,2020</h3>
+                            <div class="right">
+                                <h3>$180</h3>
+                                <span class="material-symbols-outlined green">
+                                    fiber_manual_record
+                                </span>
+                                <h3>PDF</h3>
+                        </li>
+                        <li>
+                            <h3 class="date">April,01,2020</h3>
+                            <div class="right">
+                                <h3>$120</h3>
+                                <span class="material-symbols-outlined grey">
+                                    fiber_manual_record
+                                </span>
+                                <h3>PDF</h3>
+                        </li>
+                        <li>
+                            <h3 class="date">May,01,2020</h3>
+                            <div class="right">
+                                <h3>$109</h3>
+                                <span class="material-symbols-outlined red">
+                                    fiber_manual_record
+                                </span>
+                                <h3>PDF</h3>
+                        </li>
+                        <li>
+                            <h3 class="date">March,01,2020</h3>
+                            <div class="right">
+                                <h3>$162</h3>
+                                <span class="material-symbols-outlined green">
+                                    fiber_manual_record
+                                </span>
+                                <h3>PDF</h3>
+                        </li>
+                        <li>
+                            <h3 class="date">Fwbruary,10,2020</h3>
+                            <div class="right">
+                                <h3>$198</h3>
+                                <span class="material-symbols-outlined green">
+                                    fiber_manual_record
+                                </span>
+                                <h3>PDF</h3>
+                        </li>
+                        <li>
+                            <h3 class="date">April,05,2020</h3>
+                            <div class="right">
+                                <h3>$65</h3>
+                                <span class="material-symbols-outlined grey">
+                                    fiber_manual_record
+                                </span>
+                                <h3>PDF</h3>
+                        </li>
+                        <li>
+                            <h3 class="date">June,25,2020</h3>
+                            <div class="right">
+                                <h3>$09</h3>
+                                <span class="material-symbols-outlined red">
+                                    fiber_manual_record
+                                </span>
+                                <h3>PDF</h3>
+                        </li>
+                        <li>
+                            <h3 class="date">June,01,2020</h3>
+                            <div class="right">
+                                <h3>$129</h3>
+                                <span class="material-symbols-outlined grey">
+                                    fiber_manual_record
+                                </span>
+                                <h3>PDF</h3>
+                        </li>
+                    </ul>
+
                 </div>
-           <div class="end">
-                    <div class="information">
-                        <div class="head">
-                            <h3>Your Transactions</h3>
-                            <a >23-30 March 2020</a>
-                        </div>
-                        <div class="data">
-                            <small class="heading">Newest</small>
-                            <div class="app">
-                                <div class="left">
 
-                                
-                                    <span class="material-symbols-outlined down">
-                                        arrow_downward
-                                        </span>
-                                    <div class="txt">
-                                        <h3>Netflix</h3>
-                                        <small>27 March 2020, at 12:30 PM</small>
-                                    </div></div>
-                                    <div class="left">
-                                        <small>-$25.00</small>
-                                    </div>
-                            </div>
-                            <div class="app">
-                                <div class="left">
-
-                                
-                                <span class="material-symbols-outlined up">
-                                    arrow_upward
-                                    </span>
-                                    <div class="txt">
-                                        <h3>Figma</h3>
-                                        <small>27 March 2020, at 12:30 PM</small>
-                                    </div></div>
-                                    <div class="left">
-                                        <small>-$25.00</small>
-                                    </div>
-                            </div>
-                            <small class="heading">Yesturday</small>
-                            <div class="app">
-                                <div class="left">
-
-                                
-                                <span class="material-symbols-outlined up">
-                                    arrow_upward
-                                    </span>
-                                    <div class="txt">
-                                        <h3>Linked In</h3>
-                                        <small>27 March 2020, at 12:30 PM</small>
-                                    </div></div>
-                                    <div class="left">
-                                        <small>-$25.00</small>
-                                    </div>
-                            </div>
-                            <div class="app">
-                                <div class="left">
-
-                                
-                                    <span class="material-symbols-outlined pending">
-                                        exclamation
-                                        </span>
-                                    <div class="txt">
-                                        <h3>Adobe illustration</h3>
-                                        <small>27 March 2020, at 12:30 PM</small>
-                                    </div></div>
-                                    <div class="left">
-                                        <small>Pending</small>
-                                    </div>
-                            </div>
-                           
-                        
-                            <div class="app">
-                                <div class="left">
-
-                                
-                                <span class="material-symbols-outlined up">
-                                    arrow_upward
-                                    </span>
-                                    <div class="txt">
-                                        <h3>Netflix</h3>
-                                        <small>27 March 2020, at 12:30 PM</small>
-                                    </div></div>
-                                    <div class="left">
-                                        <small>-$25.00</small>
-                                    </div>
-                            </div></div>
-                           
+            </div>
+            <div class="end">
+                <div class="information">
+                    <div class="head">
+                        <h3>Your Transactions</h3>
+                        <a>23-30 March 2020</a>
                     </div>
-                    <div class="information">
-                        <div class="head1">
-                            <h3>Billing Information</h3>
-                            <a ><span class="material-symbols-outlined">
+                    <div class="data">
+                        <small class="heading">Newest</small>
+                        <div class="app">
+                            <div class="left">
+
+
+                                <span class="material-symbols-outlined down">
+                                    arrow_downward
+                                </span>
+                                <div class="txt">
+                                    <h3>Netflix</h3>
+                                    <small>27 March 2020, at 12:30 PM</small>
+                                </div>
+                            </div>
+                            <div class="left">
+                                <small>-$25.00</small>
+                            </div>
+                        </div>
+                        <div class="app">
+                            <div class="left">
+
+
+                                <span class="material-symbols-outlined up">
+                                    arrow_upward
+                                </span>
+                                <div class="txt">
+                                    <h3>Figma</h3>
+                                    <small>27 March 2020, at 12:30 PM</small>
+                                </div>
+                            </div>
+                            <div class="left">
+                                <small>-$25.00</small>
+                            </div>
+                        </div>
+                        <small class="heading">Yesturday</small>
+                        <div class="app">
+                            <div class="left">
+
+
+                                <span class="material-symbols-outlined up">
+                                    arrow_upward
+                                </span>
+                                <div class="txt">
+                                    <h3>Linked In</h3>
+                                    <small>27 March 2020, at 12:30 PM</small>
+                                </div>
+                            </div>
+                            <div class="left">
+                                <small>-$25.00</small>
+                            </div>
+                        </div>
+                        <div class="app">
+                            <div class="left">
+
+
+                                <span class="material-symbols-outlined pending">
+                                    exclamation
+                                </span>
+                                <div class="txt">
+                                    <h3>Adobe illustration</h3>
+                                    <small>27 March 2020, at 12:30 PM</small>
+                                </div>
+                            </div>
+                            <div class="left">
+                                <small>Pending</small>
+                            </div>
+                        </div>
+
+
+                        <div class="app">
+                            <div class="left">
+
+
+                                <span class="material-symbols-outlined up">
+                                    arrow_upward
+                                </span>
+                                <div class="txt">
+                                    <h3>Netflix</h3>
+                                    <small>27 March 2020, at 12:30 PM</small>
+                                </div>
+                            </div>
+                            <div class="left">
+                                <small>-$25.00</small>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="information">
+                    <div class="head1">
+                        <h3>Billing Information</h3>
+                        <a><span class="material-symbols-outlined">
                                 more_vert
-                                </span></a>
-                        </div>
-                        <div class="msg">
-                            <div class="head">
-                                <h3>Valentina suarez</h3>
-                                <div class="action">
-                                    <a ><span class="material-symbols-outlined">
-                                        delete
-                                        </span> <small>DELETE</small></a>
-                                        <a class="edit"><span class="material-symbols-outlined">
-                                            edit
-                                            </span> <small>EDIT</small></a>
-                                </div>
-                               
-                            </div>
-                            <h3>Company Name : <small>Amazon</small> </h3>
-                            <h3>Email Address : <small>ValentinaSuarez@gmail.com</small> </h3>
-                            <h3>VAT Number : <small>FRB123456</small> </h3>
-                        </div>
-                        <div class="msg">
-                            <div class="head">
-                                <h3>Valentina suarez</h3>
-                                <div class="action">
-                                    <a ><span class="material-symbols-outlined">
-                                        delete
-                                        </span> <small>DELETE</small></a>
-                                        <a class="edit"><span class="material-symbols-outlined">
-                                            edit
-                                            </span> <small>EDIT</small></a>
-                                </div>
-                               
-                            </div>
-                            <h3>Company Name : <small>Amazon</small> </h3>
-                            <h3>Email Address : <small>ValentinaSuarez@gmail.com</small> </h3>
-                            <h3>VAT Number : <small>FRB123456</small> </h3>
-                        </div>
-                        
+                            </span></a>
                     </div>
+                    <div class="msg">
+                        <div class="head">
+                            <h3>Valentina suarez</h3>
+                            <div class="action">
+                                <a><span class="material-symbols-outlined">
+                                        delete
+                                    </span> <small>DELETE</small></a>
+                                <a class="edit"><span class="material-symbols-outlined">
+                                        edit
+                                    </span> <small>EDIT</small></a>
+                            </div>
+
+                        </div>
+                        <h3>Company Name : <small>Amazon</small> </h3>
+                        <h3>Email Address : <small>ValentinaSuarez@gmail.com</small> </h3>
+                        <h3>VAT Number : <small>FRB123456</small> </h3>
+                    </div>
+                    <div class="msg">
+                        <div class="head">
+                            <h3>Valentina suarez</h3>
+                            <div class="action">
+                                <a><span class="material-symbols-outlined">
+                                        delete
+                                    </span> <small>DELETE</small></a>
+                                <a class="edit"><span class="material-symbols-outlined">
+                                        edit
+                                    </span> <small>EDIT</small></a>
+                            </div>
+
+                        </div>
+                        <h3>Company Name : <small>Amazon</small> </h3>
+                        <h3>Email Address : <small>ValentinaSuarez@gmail.com</small> </h3>
+                        <h3>VAT Number : <small>FRB123456</small> </h3>
+                    </div>
+
+                </div>
             </div>
         </div>
+        <form class="cardnum credit-card">
+            <div class="form-header">
+                <h4 class="title">Credit card detail  <span class="material-symbols-outlined" onclick="showcard()">
+                    arrow_forward
+                </span></h4>
+            </div>
+            <div class="form-body">
+                <label for="appname"
+                    style="display: flex; gap: 30px; font-size: 16px; font-weight: 600; margin: 20px 0; text-align: center;align-items: center;">Card
+                    Name : <h3 class="appname" name="appname"></h3></label>
+                <input type="text" class="card-number" placeholder="Card Number">
+                <div class="date-field">
+                    <div class="month">
+                        <input type="text" class="Month" placeholder="Month" list="Month">
+                        <datalist id="Month">
+                            <option value="01">January</option>
+                            <option value="02">February</option>
+                            <option value="03">March</option>
+                            <option value="04">April</option>
+                            <option value="05">May</option>
+                            <option value="06">June</option>
+                            <option value="07">July</option>
+                            <option value="08">August</option>
+                            <option value="09">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </datalist>
+                    </div>
+                    <div class="year">
+                        <input type="text" class="Year" placeholder="Year" list="Year">
+                        <datalist id="Year">
+                            <option value="16">2016</option>
+                            <option value="17">2017</option>
+                            <option value="18">2018</option>
+                            <option value= "19">2019</option>
+                            <option value="20">2020</option>
+                            <option value="21">2021</option>
+                            <option value="22">2022</option>
+                            <option value="23">2023</option>
+                            <option value="24">2024</option>
+                            <option value="25">2025</option>
+                            <option value="26">2026</option>
+                            <option value="27">2027</option>
+                            <option value="28">2028</option>
+                            <option value="29">2029</option>
+                            <option value="30">2030</option>
+                        </datalist>
+                    </div>
+                </div>
+                <div class="card-verification">
+                    <div class="cvv-input">
+                        <input type="text" placeholder="CVV" class="cvv">
+                    </div>
+                    <div class="cvv-details">
+                        <p>3 or 4 digits usually found <br> on the signature strip</p>
+                    </div>
+                </div>
+                <button type="submit" class="proceed-btn" onclick="adddata()"><a href="#">Add Card</a></button>
+            </div>
+        </form>
+
     </div>
-    <script src="account.js"></script>
+
+    </div>
+
+    <script src="billing.js"></script>
 </body>
 
 </html>
