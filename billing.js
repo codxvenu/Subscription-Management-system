@@ -174,6 +174,10 @@ const masterback = "https://simey-credit-card.netlify.app/img/logos/master.svg";
 const visabg = "https://img.freepik.com/free-vector/gradient-black-background-with-cubes_23-2149152314.jpg?t=st=1715449567~exp=1715453167~hmac=40abe49874614821303df7aa8c27c4be9fd721162cce91bda53ba2e52c5b047a&w=996";
 const masterbg = "https://img.freepik.com/free-vector/blue-wavy-background-with-line-wave_677411-919.jpg?t=st=1715450250~exp=1715453850~hmac=558ec0fa74d194c3db0e51fa671966d5abe5ae962b24d9285ade075e9fae4bba&w=106";
 
+userinfo = JSON.parse(localStorage.getItem("userinfo")) || { name: [], email: [], password: [] };
+
+const names = document.getElementById("name");
+names.innerHTML = userinfo.name[0];
 
 let cardlists;
 loaddata();

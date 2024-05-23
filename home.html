@@ -16,7 +16,7 @@
     <div class="conatiner">
         <aside class="sidebar">
     <div class="logo">
-                <h2 onclick="navigation()">Dhruv </h2>
+                <h2 onclick="navigation()" id="name">Dhruv </h2>
                 <img src="bubble.png" alt="">
             </div>
             <hr>
@@ -64,7 +64,7 @@
             <header>
                 <div class="title">
                     <div class="context">
-                        <h2>Hello Dhruv</h2>
+                        <h2 id="headsname">Hello Dhruv</h2>
                         <h3>It's good to see you again.</h3>
                     </div>
                     <img src="pattern.png" alt="">
@@ -180,6 +180,10 @@
         </div>
     </div>
     <script src="account.js"></script>
+    <script>
+        const head = document.getElementById("headsname");
+head.innerHTML = "Hello " + userinfo.name[0].toUpperCase();
+    </script>
 </body>
 
 </html>

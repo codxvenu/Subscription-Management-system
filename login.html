@@ -15,8 +15,6 @@
              <div class="data">
                 <h1>Welcome!</h1>
             <p>Use these awesome forms to login or create new account in your project for free</p>
-       
-            <!-- <h2>Register With</h2> -->
             <ul class="options">
                 <li><i class="fa-brands fa-facebook"></i></li>
                 <li><i class="fa-brands fa-apple"></i></li>
@@ -24,13 +22,13 @@
               
             </ul>
             <small>or</small>
-            <form action="home.html" method="get">
+            <form >
                 <label for="Name" >Name</label>
-                <input type="text" name="Name" placeholder="Your Full Name">
+                <input type="text" name="Name" placeholder="Your Full Name" id="name">
                 <label for="Name" >Email</label>
-                <input type="email" name="email" id="Email" placeholder="Your Email Adress">
+                <input type="email" name="email" id="email" placeholder="Your Email Adress">
                 <label for="Name">Password<i class="fa-regular fa-eye" id="eye"></i></label>
-                <input type="password" name="pass" id="Pass" placeholder="Your Password">
+                <input type="password" name="pass" id="pass" placeholder="Your Password">
               <div class="toggle">
                 <label class="switch" >
                     <input type="checkbox">
@@ -40,20 +38,22 @@
               </div>
                
 
-                <input type="submit" value="Submit">
+                <input type="button" id="submit" value="Log In" onclick="addlogindata()">
             </form>
             <ul class="login">
                 <li><small>Already have an account?</small> <h5>Sign Up</h5></li>
             </ul>
       
     </div></div></div></div>
+    <script src="login.js"></script>
     <script src="https://kit.fontawesome.com/ff0a2654ff.js" crossorigin="anonymous"></script>
+    
 <script>
     var eye = document.getElementById("eye");
 
    eye.addEventListener("click", showpass());
     function showpass() {
-        var x = document.getElementById("Pass");
+        var x = document.getElementById("pass");
 if (x.type === "password") {
   x.type = "text";
 } else {

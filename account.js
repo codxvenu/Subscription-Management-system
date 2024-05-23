@@ -103,6 +103,9 @@ const illustrator = "https://static-00.iconduck.com/assets.00/adobe-illustrator-
 const photoshop = "https://static-00.iconduck.com/assets.00/adobe-photoshop-icon-512x512-sphmjz8h.png";
 const framer = "https://cdn.dribbble.com/users/4878/screenshots/15802274/media/8f63cece88fccd2a614f791e5fbec240.png?resize=1000x750&vertical=center";
 
+userinfo = JSON.parse(localStorage.getItem("userinfo")) || { name: [], email: [], password: [] };
 
+const names = document.getElementById("name");
+names.innerHTML = userinfo.name[0];
 let applists;
 loaddata();
