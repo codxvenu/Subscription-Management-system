@@ -14,9 +14,8 @@
     <div class="conatiner">
         <div class="blur"></div>
         <aside class="sidebar">
-            <span class="material-symbols-outlined close" onclick="navigation()">close</span>
             <div class="logo">
-                <h2>Dhruv </h2>
+                <h2 onclick="navigation()">Dhruv </h2>
                 <img src="bubble.png" alt="">
             </div>
             <hr>
@@ -26,11 +25,11 @@
                     <span class="material-symbols-outlined">dashboard</span>
                     <a href="home.html">Dashboard</a>
                 </li>
-                <li class="active">
+                <li>
                     <span class="material-symbols-outlined">show_chart</span>
                     <a href="account.html">Accounts</a>
                 </li>
-                <li>
+                <li class="active">
                     <span class="material-symbols-outlined">bar_chart</span>
                     <a href="billing.html">Billing</a>
                 </li>
@@ -50,7 +49,7 @@
         </aside>
         <div class="content">
             <nav class="topnav">
-                <span class="material-symbols-outlined home">home</span>
+                <span class="material-symbols-outlined home" onclick="navigation()">home</span>
                 <h2>Billing</h2>
                 <div class="right"> <input type="text" placeholder="Search...." class="search">
 
@@ -108,79 +107,7 @@
                         </span></a>
                 </div>
                 <div class="data">
-                    <ul>
-                        <li>
-                            <h3 class="date">June,01,2020</h3>
-                            <div class="right">
-                                <h3>$180</h3>
-                                <span class="material-symbols-outlined green">
-                                    fiber_manual_record
-                                </span>
-                                <h3>PDF</h3>
-                        </li>
-                        <li>
-                            <h3 class="date">April,01,2020</h3>
-                            <div class="right">
-                                <h3>$120</h3>
-                                <span class="material-symbols-outlined grey">
-                                    fiber_manual_record
-                                </span>
-                                <h3>PDF</h3>
-                        </li>
-                        <li>
-                            <h3 class="date">May,01,2020</h3>
-                            <div class="right">
-                                <h3>$109</h3>
-                                <span class="material-symbols-outlined red">
-                                    fiber_manual_record
-                                </span>
-                                <h3>PDF</h3>
-                        </li>
-                        <li>
-                            <h3 class="date">March,01,2020</h3>
-                            <div class="right">
-                                <h3>$162</h3>
-                                <span class="material-symbols-outlined green">
-                                    fiber_manual_record
-                                </span>
-                                <h3>PDF</h3>
-                        </li>
-                        <li>
-                            <h3 class="date">Fwbruary,10,2020</h3>
-                            <div class="right">
-                                <h3>$198</h3>
-                                <span class="material-symbols-outlined green">
-                                    fiber_manual_record
-                                </span>
-                                <h3>PDF</h3>
-                        </li>
-                        <li>
-                            <h3 class="date">April,05,2020</h3>
-                            <div class="right">
-                                <h3>$65</h3>
-                                <span class="material-symbols-outlined grey">
-                                    fiber_manual_record
-                                </span>
-                                <h3>PDF</h3>
-                        </li>
-                        <li>
-                            <h3 class="date">June,25,2020</h3>
-                            <div class="right">
-                                <h3>$09</h3>
-                                <span class="material-symbols-outlined red">
-                                    fiber_manual_record
-                                </span>
-                                <h3>PDF</h3>
-                        </li>
-                        <li>
-                            <h3 class="date">June,01,2020</h3>
-                            <div class="right">
-                                <h3>$129</h3>
-                                <span class="material-symbols-outlined grey">
-                                    fiber_manual_record
-                                </span>
-                                <h3>PDF</h3>
-                        </li>
+                    <ul id="data">
                     </ul>
 
                 </div>
@@ -192,91 +119,9 @@
                         <h3>Your Transactions</h3>
                         <a>23-30 March 2020</a>
                     </div>
-                    <div class="data">
+                    <div class="data" id="trans">
                         <small class="heading">Newest</small>
-                        <div class="app">
-                            <div class="left">
-
-
-                                <span class="material-symbols-outlined down">
-                                    arrow_downward
-                                </span>
-                                <div class="txt">
-                                    <h3>Netflix</h3>
-                                    <small>27 March 2020, at 12:30 PM</small>
-                                </div>
-                            </div>
-                            <div class="left">
-                                <small>-$25.00</small>
-                            </div>
-                        </div>
-                        <div class="app">
-                            <div class="left">
-
-
-                                <span class="material-symbols-outlined up">
-                                    arrow_upward
-                                </span>
-                                <div class="txt">
-                                    <h3>Figma</h3>
-                                    <small>27 March 2020, at 12:30 PM</small>
-                                </div>
-                            </div>
-                            <div class="left">
-                                <small>-$25.00</small>
-                            </div>
-                        </div>
-                        <small class="heading">Yesturday</small>
-                        <div class="app">
-                            <div class="left">
-
-
-                                <span class="material-symbols-outlined up">
-                                    arrow_upward
-                                </span>
-                                <div class="txt">
-                                    <h3>Linked In</h3>
-                                    <small>27 March 2020, at 12:30 PM</small>
-                                </div>
-                            </div>
-                            <div class="left">
-                                <small>-$25.00</small>
-                            </div>
-                        </div>
-                        <div class="app">
-                            <div class="left">
-
-
-                                <span class="material-symbols-outlined pending">
-                                    exclamation
-                                </span>
-                                <div class="txt">
-                                    <h3>Adobe illustration</h3>
-                                    <small>27 March 2020, at 12:30 PM</small>
-                                </div>
-                            </div>
-                            <div class="left">
-                                <small>Pending</small>
-                            </div>
-                        </div>
-
-
-                        <div class="app">
-                            <div class="left">
-
-
-                                <span class="material-symbols-outlined up">
-                                    arrow_upward
-                                </span>
-                                <div class="txt">
-                                    <h3>Netflix</h3>
-                                    <small>27 March 2020, at 12:30 PM</small>
-                                </div>
-                            </div>
-                            <div class="left">
-                                <small>-$25.00</small>
-                            </div>
-                        </div>
+                      
                     </div>
 
                 </div>
@@ -338,7 +183,7 @@
                 <input type="text" class="card-number" placeholder="Card Number">
                 <div class="date-field">
                     <div class="month">
-                        <input type="text" class="Month" placeholder="Month" list="Month">
+                        <input type="text" class="Month" placeholder="Month" list="Month" >
                         <datalist id="Month">
                             <option value="01">January</option>
                             <option value="02">February</option>

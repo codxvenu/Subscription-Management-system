@@ -413,6 +413,7 @@ table {
     font-weight: 500;
     font-size: .875rem;
   }
+
   @media (max-width: 768px) {
 .conatiner{
     height: auto;
@@ -451,11 +452,6 @@ table {
 }
 .sidebar .links{
     margin-left: 5px;
-}
-.close{
-    margin-left: 140px;
-    margin-bottom: -5px;
-    margin-top: 10px;
 }
 .logo input{
     display: none;

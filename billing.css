@@ -104,9 +104,6 @@ small {
     margin-top: 3px;
 }
 
-.close {
-    display: none;
-}
 
 .active {
     cursor: pointer;
@@ -493,7 +490,7 @@ header {
 
 .information .app h3 {
     font-size: 10px;
-
+    text-transform: capitalize;
 }
 
 .heading {
@@ -605,14 +602,13 @@ header {
 .credit-card {
     width: 360px;
     height: 400px;
-    display: none;
     margin: 0px auto;
     border: 1px solid #ddd;
     border-radius: 6px;
     background: rgb(25 26 30 / 70%);
     backdrop-filter: blur(3px);
     --webkit-backdrop-filter: blur(7px);
-    display: flex;
+    display: none;
     flex-direction: column;
     position: absolute;
     top: calc(50% - 200px);
@@ -666,8 +662,9 @@ header {
 .cvv-details,
 .cvv-input input,
 .month input,
-.year input {
-    color: var(--cream);
+.year input ,
+input::placeholder{
+    color: var(--white);
     opacity: .7;
     background: transparent;
 
@@ -801,12 +798,6 @@ select option{
         margin-left: 5px;
     }
 
-    .close {
-        margin-left: 140px;
-        margin-bottom: -5px;
-        margin-top: 10px;
-    }
-
     .logo input {
         display: none;
     }
@@ -907,6 +898,12 @@ select option{
         width: 90%;
         height: auto;
         margin: 20px auto;
+    }
+
+    .credit-card {
+        position: fixed;
+        left: 0;
+        right: 0;
     }
 
     .end {
