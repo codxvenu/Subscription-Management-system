@@ -64,7 +64,7 @@ body {
     backdrop-filter: blur(7px);
     --webkit-backdrop-filter: blur(30px);
     border-right: 1px solid rgba(255, 255, 255, 0.7);
-
+    position: fixed;
     transition: width 0.3s ease;
 }
 
@@ -161,8 +161,9 @@ border: .5px solid rgba(255, 255, 255, 0.437);
 }
 
 .content{
-    width: calc(100% - 260px);
-    padding:1rem
+    width: calc(100%);
+    padding:1rem;
+    height: 100%;
 }
 
 .topnav{
@@ -170,7 +171,7 @@ border: .5px solid rgba(255, 255, 255, 0.437);
     width: 100%;
     display: flex;
     flex-direction: row;
-    gap: 800px;
+    justify-content: space-between;
 }
 .right{
     display: flex;
@@ -201,10 +202,10 @@ border: .5px solid rgba(255, 255, 255, 0.437);
 }
 header{
     display: flex;
-    gap: 20px;
+    gap: 2% ;
 }
 .title{
-    width: 60%;
+    width: 51%;
     height: 145px;
     display: flex;
     align-items: center;
@@ -212,14 +213,15 @@ header{
     border-radius:10px ;
     border: .5px solid rgba(255, 255, 255, 0.437);
     padding-left: 10px;
-    gap: 80px;
+    gap: 12%;
     margin-bottom: 20px;
     background: rgb(25 26 30 / 70%);
     backdrop-filter: blur(30px);
     --webkit-backdrop-filter: blur(17px);
+    text-align: center;
 }
 .year{
-    width: 20%;
+    width: 16%;
     text-align: center;
     height: 150px;
     border-radius: 10px;
@@ -250,14 +252,14 @@ header{
 }
 .title img{
     height: 145px;
-    width: 290px;
+    width: 50%;
     border-radius:0px 20px 20px 0; 
 }
 
 .calendar {
     position: absolute;
-    top: 100px;
-    right: 100px;
+    top: 15%;
+    right: 2%;
     width: 300px;
     background: rgb(25 26 30 / 70%);
     backdrop-filter: blur(30px);
@@ -266,6 +268,7 @@ header{
     box-shadow: 0 5px 50px rgba(#000, 0.5);
     border-radius: 8px;
     overflow: hidden;
+    border: .5px solid rgba(255, 255, 255, 0.437);
   }
   h2 {
     margin: 0;
@@ -312,16 +315,17 @@ header{
     list-style: none;
     display: flex;
     flex-direction: row;
-    gap: 40px;
-    width: 125%;
-    
+    gap: 10px;
+    width: 70%;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
 }
 .apps li{
     width: 245px;
     padding: 1rem 0.67rem;
     display: flex;
     align-items: center;
-    gap: 50px;
+    justify-content: space-between;
     text-transform: capitalize;
     background: rgb(25 26 30 / 70%);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -341,7 +345,7 @@ header{
 
 .subscription{
     margin-top: 20px;
-    width: 120%;
+    width: 100%;
     /* border: 2px solid rgba(245, 245, 245, 0.607); */
     border-radius: 10px;
     padding: 15px;
@@ -352,6 +356,7 @@ header{
    font-size: 16px;
    text-transform: capitalize;
    height: 350px;
+   overflow-x: auto;
 
 }
 .subscription h2{
@@ -481,12 +486,9 @@ table {
     align-items: center;
 }
 .title{
-   width: 200px;
-   padding: 10px;
+   width: 60%;
    flex-direction: column;
-   padding-bottom: 0px;
-   margin-left: 10px;
-   gap: 30px;
+   gap: 20px;
 }
 .title h2{
     font-size: large;
@@ -498,7 +500,7 @@ table {
 }
 .title img{
     height: 60px;
-    width: 193px;
+    width: 100%;
     gap: 5px;
     background: black;
     border-radius:0 0 20px 20px;
@@ -514,10 +516,10 @@ header{
     margin-top: 65px;
 }
 .year{
-    width: 190px;
+    width: 40%;
     font-weight: 400;
     font-size: 13px;
-    padding: 2rem;
+    padding: 25px 10px 8px 10px;
 }
 .year span{
     font-size: small;
@@ -525,15 +527,15 @@ header{
     padding: 0.37rem;
 }
 .btn {
-    gap: 40px;
+    gap: 4%;
 }
-.apps{
-    flex-direction: column;
+.apps{  
     width: 100%;
-    
+    margin-bottom: 0px;
 }
 .apps li{
-    width: 350px;
+    width: 330px  !important;
+    margin-bottom: 5px;
     
 }
 .apps img{
@@ -541,11 +543,11 @@ header{
     height: 60px;
     margin-left: 70px;
 }
-.subscription{
+/* .subscription{
     width: 350px;
     font-size: 15px;
     overflow: hidden;
-}
+} */
 table{
     overflow-x: scroll;
 }
@@ -564,4 +566,36 @@ table img{
   th:last-child{
     display: none;
   }
+  }
+  @media (max-width: 1155px) {
+    .calendar{
+        top: 38%;
+    right: 1%;
+    }
+    .year{
+        width: 30%;
+    }
+    .title{
+        width: 75%;
+    }
+    header{
+        display: flex;
+        gap: 2%;
+        width: 100%;
+    }
+    th,td{
+        padding: 12px 55px;
+    }
+    .apps{
+        margin-bottom: 50px;
+    }
+    .apps li{
+        width: 207px;
+        padding: 1rem 0.67rem;
+        display: flex;
+        align-items: center;
+    }
+    .sidebar .logo img {
+        width: 50%;}
+  
   }
