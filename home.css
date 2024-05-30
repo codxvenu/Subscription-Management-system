@@ -24,6 +24,9 @@
     font-family: Open Sans;
     /* border: 2px solid red; */
 }
+html {
+  scroll-behavior: smooth;
+}
 h2{
     font-size: 20px;
 }
