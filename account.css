@@ -24,7 +24,9 @@
     font-family: "Inter", sans-serif;
     /* border: 2px solid red; */
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
    height: 100vh;
     color: var(--white);
